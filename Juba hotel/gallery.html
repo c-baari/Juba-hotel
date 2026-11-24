@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page fit phone screens (needed for responsive design) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | JUBA Hotel</title>
+  <!-- The ONE CSS file shared by all 8 pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGATION (identical on every page) ===== -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">JUBA<span>HOTEL</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="btn btn-small">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <h1>Photo Gallery</h1>
+      <p>A look inside JUBA Hotel</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- CSS grid: each photo is one gallery-item (image + short caption) -->
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <img src="images/hotel.jpg" alt="Front view of GrandStay Hotel building">
+            <p>Hotel Exterior</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/reception.jpg" alt="Hotel reception desk and lobby">
+            <p>Reception</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/room1.jpg" alt="Standard room interior">
+            <p>Standard Room</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/room2.jpg" alt="Deluxe room interior">
+            <p>Deluxe Room</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/room3.jpg" alt="Suite room interior">
+            <p>Suite Room</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/restaurant.jpg" alt="Hotel restaurant dining area">
+            <p>Restaurant</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/pool.jpg" alt="Hotel swimming pool">
+            <p>Swimming Pool</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/about1.jpg" alt="Hotel lobby seating area">
+            <p>Hotel Lobby</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (identical on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>JUBA Hotel</h3>
+        <p>Comfortable rooms, friendly service and great value for every guest.</p>
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Corso Somalia, Mogadishu, Somalia</p>
+        <p>Phone: 252 614556677</p>
+        <p>Email: info@juba.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

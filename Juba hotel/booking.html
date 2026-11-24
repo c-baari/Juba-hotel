@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page fit phone screens (needed for responsive design) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay | JUBA Hotel</title>
+  <!-- The ONE CSS file shared by all 8 pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGATION (identical on every page) ===== -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">JUBA<span>HOTEL</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="btn btn-small">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <h1>Book Your Stay</h1>
+      <p>Fill in the form and we will confirm your reservation</p>
+    </section>
+
+    <section class="section section-gray">
+      <div class="container">
+        <div class="form-card">
+          <h2>Reservation Form</h2>
+
+          <form action="#" method="post">
+
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+            </div>
+
+            <!-- Two fields in one row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="4" value="1" required>
+              </div>
+              <div class="form-group">
+                <label for="roomtype">Room Type</label>
+                <select id="roomtype" name="roomtype">
+                  <option value="standard">Standard Room - $80</option>
+                  <option value="deluxe">Deluxe Room - $120</option>
+                  <option value="suite">Suite Room - $200</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="requests">Special Requests</label>
+              <textarea id="requests" name="requests" placeholder="Late arrival, extra bed, allergies..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Booking</button>
+            <!-- <p class="form-note">This is a demonstration form. No real booking is made.</p> -->
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (identical on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>JUBA Hotel</h3>
+        <p>Comfortable rooms, friendly service and great value for every guest.</p>
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Corso Somalia, Mogadishu, Somalia</p>
+        <p>Phone: 252 614556677</p>
+        <p>Email: info@juba.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
